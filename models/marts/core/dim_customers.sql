@@ -1,3 +1,8 @@
+-- Add a new field called lifetime_value to the dim_customers model:
+-- lifetime_value: the total amount a customer has spent at jaffle_shop
+-- Hint: The sum of lifetime_value is $1,672
+
+
 with customers as (
 
     select * from {{ ref('stg_customers') }}
